@@ -41,34 +41,34 @@ var documents = [{
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
     "id": 8,
+    "url": "/droit-interne-du-groupe-jbala-rando/",
+    "title": "القانون الداخلي لمجموعة جبالة راندو",
+    "body": "2022/10/23 - 📋القانون الداخلي لمجموعة جبالة راندو:          ▪️➖▪➖▪➖▪➖▪➖▪⏹مجموعة “جبالة راندو”#JBALA_RANDOمجموعة لا تدعي التميز ولكن التميز يرتبط بإسمها، مجموعة شبابية يجمعها شغف المغامرة وحب السفر و الترحال.  ولكي تبقى المجموعة متميزة ودائمة الافادة يجب علينا الاتزام بالقوانين التنظيمية الداخلية لها:🔰أولا: المجموعة للجميع وليس لشخص معين. 🔰ثانيا: إحترام الأعضاء واجب وضروري وأي شخص لا يحترم هذا القانون يحذف مباشرة. 🔰ثالثا: مناقشة مواضيع لها علاقة بالترحال و التسلق الجبلي وأي رياضة لها علاقة بهذا المجال باحترام وتقبل الرأي الآخر بكل روح رياضية. 🔰رابعا: نشر المنشور مع الوصف أو العنوان وأي موضوع مخالف للرياضة والسياحة الجبلية غير مسموح به داخل المجموعة. 🔰خامسا: عدم نشر الاشهارات التجارية الخاصة بالصفحات وباقي المجموعات الأخرى. 🔰سادسا: تجنب النقاشات الثنائية والدينية والسياسية والحزبية …🔰سابعا: من لا يريد أن تنشر صوره 📷مع المجموعة عليه الامتناع عن أخذ صور جماعية. 🔰ثامنا: الالتزام ب مواعيد الرحلة وأي شخص ألغى مقعده في اليوم الذي يسبق اليوم المحدد للرحلة يجب عليه أن يدفع ثمن المشاركة. ⬅️الهدف من إنشاء المجموعة . . الافادة والاستفادة . . مشاركة الأعضاء المسارات والرحلات . . مشاركة الاعضاء المعدات الخاصة بالترحال . . الإجابة على الاستفسارات المتعلقة بالرياضات الجبليةوالقيام بأعمال تطوعية لفائدة ساكنة القرى الجبلية الهشة. ➖➖➖➖➖➖#JBALA_RANDO "
+    }, {
+    "id": 9,
     "url": "/rendez-vous-h%C3%A9bdomadaire/",
     "title": "Rendez-vous hebdomadaire",
     "body": "2021/06/25 - Chaque semaine nous vous propose une rencontre d’échange et de motivation. L’objectif et de répondre au questions des membres et suivre l’avancement de nos activités. Heure: Le rencontre aura lieu à google meet chaque vendredi à 20:00 h ( Maroc ). Lien de rencontre: Lien google meet "
     }, {
-    "id": 9,
+    "id": 10,
     "url": "/html/",
     "title": "Qu'est-ce que le HTML ?",
     "body": "2021/06/10 - Définition:    HTML signifie H yper T ext M arkup L anguage     HTML est le langage de balisage standard pour les pages Web     Les éléments HTML sont les blocs de construction des pages HTML     Les éléments HTML sont représentés par des balises &lt;&gt;  Références:  What is HTML?"
     }, {
-    "id": 10,
+    "id": 11,
     "url": "/css/",
     "title": "Qu'est-ce que le CSS ?",
     "body": "2021/06/10 -  CSS signifie feuilles de style en cascade CSS décrit comment les éléments HTML doivent être affichés à l’écran, sur papier ou dans d’autres médias CSS économise beaucoup de travail. Il peut contrôler la mise en page de plusieurs pages Web à la fois Les feuilles de style externes sont stockées dans des fichiers CSSRéférences:  CSS Introduction"
     }, {
-    "id": 11,
+    "id": 12,
     "url": "/lancement-club-au-centre-solicode/",
     "title": "Lancement du club au centre SoliCode",
     "body": "2021/06/04 - Nous somme heureux du lancement du club des développeurs informatique au centre centre solidaire digital SoliCode à Tanger le 04/06/2021. Dans notre première rencontre, nous avons discuté sur l’objectif de club à atteindre et les activités que nous pouvons réaliser dans le centre. Nous avons mis d’accord sur l’objectif principale de notre club qui est : l’insertion professionnelle. Nous avons mis d’accord sur deux activités :  Motivation des membre pour la création de leurs portfolio numérique.  Organisation d’une journée d’initiation à la programmation. Références:  solicode. co"
     }, {
-    "id": 12,
+    "id": 13,
     "url": "/notre-page-sur-github/",
     "title": "Notre page sur Github.com",
     "body": "2020/06/12 - Nous partageons avec vous notre page sur github. com. il contient tous les fichiers que nous avons utilisé durant nos activités. Références:  github. com/club-dev-info"
-    }, {
-    "id": 13,
-    "url": "/formation-initiation-algorithme/",
-    "title": "Formation initiation à l'algorithme et la programmation",
-    "body": "2020/06/12 - Qu’est ce qu’un algorithme ?: Un programme est un code écrit par un programmeur pour être exécuter sur l’ordinateur afin de résoudre un problème de traitement d’information. Pour apprendre à programmer, nous commençons d’abord à apprendre la logique de l’ordinateur et comment il pense ou comment nous devons penser pour écrire de code compréhensible par l’ordinateur. Cette logique s’appelle “Algorithme”. Dans notre formation live, en ligne et gratuite pour les membres du club. Nous allons vous expliquer et entraîner sur la logique de l’ordinateur étape par étape. À la fin de cette formation vous serai capable d’écrire des programmes simples pour résoudre des problèmes de traitement d’information sur l’ordinateur. Aussi vous aurez une idée claire sur la programmation et sa logique, chose qui vous faciliterez la tâche d’apprentissage d’un langage de programmation. Programme de formation:  Introduction Comprendre l’ordinateur Algorithme et pseudo-code Variable et affectation Entrée et sortie Test et boucleInscription à la formation: Pour s’inscrire à la formation, il suffit de remplir le formulaire suivant : Formulaire d’inscription Nous allons vous envoyer un email content le lien de google meet au jour de la séance. Flayer: Références:  Lien de la formation sur Udemy"
     }];
 
 var idx = lunr(function () {
