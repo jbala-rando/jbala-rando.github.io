@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/activit%C3%A9s/formation-initiation-programmation/</loc>
-<lastmod>2021-06-12T00:00:00+01:00</lastmod>
+<loc>/activit%C3%A9s/randonn%C3%A9es/</loc>
+<lastmod>2022-10-23T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>/natures-activit%C3%A9s/application-web/</loc>
-<lastmod>2022-10-23T12:52:57+01:00</lastmod>
-</url>
-<url>
-<loc>/natures-activit%C3%A9s/site-web/</loc>
-<lastmod>2022-10-23T12:52:57+01:00</lastmod>
+<loc>/natures-activit%C3%A9s/Randonn%C3%A9e/</loc>
+<lastmod>2022-10-23T13:09:39+01:00</lastmod>
 </url>
 <url>
 <loc>/auteurs/admin/</loc>
-<lastmod>2022-10-23T12:52:57+01:00</lastmod>
+<lastmod>2022-10-23T13:09:39+01:00</lastmod>
 </url>
 <url>
 <loc>/auteurs/essarraj/</loc>
-<lastmod>2022-10-23T12:52:57+01:00</lastmod>
+<lastmod>2022-10-23T13:09:39+01:00</lastmod>
 </url>
 <url>
 <loc>/droit-interne-du-groupe-jbala-rando/</loc>
@@ -35,6 +31,9 @@
 </url>
 <url>
 <loc>/inscription</loc>
+</url>
+<url>
+<loc>/itineraires</loc>
 </url>
 <url>
 <loc>/membres</loc>

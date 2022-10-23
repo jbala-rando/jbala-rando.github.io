@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Inscription
-permalink: /inscription
+title: Itinéraires
+permalink: /itineraires
 comments: false
 ---
-# Inscription
+# Itinéraires
  
 En cours de construction
