@@ -1,8 +1,8 @@
-- name: Accueil
+- name: ترحيب
   link: /
-- name: Activités
+- name: أنشطة
   link: /activités
-- name : Membres
-  link : /membres
-- name : Inscription
+- name : مسارات
+  link : /itineraires
+- name : تسجيل
   link : /inscription
