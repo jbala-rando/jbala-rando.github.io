@@ -1,0 +1,8 @@
+- name: Accueil
+  link: /
+- name: Activités
+  link: /activités
+- name : Membres
+  link : /membres
+- name : Inscription
+  link : /inscription

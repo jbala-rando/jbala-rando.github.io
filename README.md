@@ -1,2 +1,2 @@
-# jbala-rando.github.io
-Site web
+# jbala-rando
+Site Web
