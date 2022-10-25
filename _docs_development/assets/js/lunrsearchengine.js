@@ -52,6 +52,7 @@ var documents = [{
     }];
 
 var idx = lunr(function () {
+    this.use(lunr.ar);
     this.ref('id')
     this.field('title')
     this.field('body')
