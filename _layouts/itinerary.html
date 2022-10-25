@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-2 pl-0">
+          {% include share.html %}
+          {{page.Difficulty}}
+      </div>
+
+      <!-- Post -->
+  
+      <div class="col-md-9 flex-first flex-md-unordered">
+          <div class="mainheading">
+            {% include author-box.html %}  
+            <h1 class="posttitle">{{ page.title }}</h1>
+           
+          </div>
+
+          <!-- Post Featured Image -->
+          <div class="video-container">
+            <iframe 
+                width="560" 
+                height="315" 
+                src= https://fr.wikiloc.com/wikiloc/spatialArtifacts.do?event=view&id={{page.wikiloc_id}}&measures=off&title=off&near=off&images=off&maptype=H 
+                title= {{page.title}} 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            </iframe>
+          </div>
+
+          <!-- Post Content -->
+          <div class="article-post">
+              <!-- Toc if any -->
+              {% if page.toc %}
+                  {% if page.beforetoc %}
+                      <p><em>{{page.beforetoc}}</em></p>
+                  {% endif %}
+                  <div class="toc mt-4 mb-4 lead">
+                      <h3 class="font-weight-bold">Summary</h3>
+                      {% include toc.html html=content %}
+                  </div>
+              {% endif %}
+              <!-- End Toc -->
+               <ul>
+                    <li>صعوبة :  {{page.Difficulty}}</li>
+                    <li>مسافه :  {{page.Distance}} km  </li>
+               </ul>
+              {{content}}
+          </div>
+
+          <!-- Post Categories -->
+          <div class="after-post-cats">
+              <ul class="tags mb-4">
+                  {% assign sortedCategories = page.activityNatures | sort %}
+                  {% for category in sortedCategories %}
+                  <li>
+                      <a class="smoothscroll" href="{{site.baseurl}}/activités#{{ category | replace: " ","-" }}">{{ category }}</a>
+                  </li>
+                  {% endfor %}
+              </ul>
+          </div>
+          <!-- End Categories -->
+
+
+      </div>
+      <!-- End Post -->
+
+  </div>
+</div>
+
+

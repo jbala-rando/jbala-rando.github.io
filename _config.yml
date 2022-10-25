@@ -20,6 +20,9 @@ collections:
   activities:
     output: true
     permalink: /activités/:title/
+  itineraries:
+    output: true
+    permalink: /itinéraires/:title/
   skills:
     output: true
     permalink: /compétences/:title/
