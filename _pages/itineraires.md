@@ -5,27 +5,31 @@ permalink: /itineraires
 comments: false
 ---
 
-{% assign activitiesNatures = '' | split: '' %}
-{% for activity in site.itineraries %}
-{% assign activitiesNatures = activitiesNatures | concat: activity.activityNatures   %}
-{% endfor %}
-
-{% for activityNature in activitiesNatures %}
 
 <section class="recent-posts">
     <div class="section-title">
-        <h2 id="{{ activityNature | replace: " ","-" }}"><span>{{  activityNature }}</span></h2>
+        <h2 id="facile-accessible-à-tous"><span>سهل و في متناول الجميع</span></h2>
     </div>
     <div class="row listrecent">
  {% for activity in site.itineraries %}
- {% if activity.activityNatures contains activityNature   %}
+ {% if activity.difficulty == 'سهل و في متناول الجميع'   %}
  {% include activitybox.html %}
  {% endif %}
  {% endfor %} 
     </div>
 </section>
 
-{% endfor %}
-
+<section class="recent-posts">
+    <div class="section-title">
+        <h2 id="facile"><span>سهل</span></h2>
+    </div>
+    <div class="row listrecent">
+ {% for activity in site.itineraries %}
+ {% if activity.difficulty == 'سهل'   %}
+ {% include activitybox.html %}
+ {% endif %}
+ {% endfor %} 
+    </div>
+</section>
 
 

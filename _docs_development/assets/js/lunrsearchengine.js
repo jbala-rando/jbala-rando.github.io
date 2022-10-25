@@ -28,7 +28,7 @@ var documents = [{
     "id": 5,
     "url": "/itineraires",
     "title": "Nos activités",
-    "body": "{% assign activitiesNatures = ‘’ | split: ‘’ %}{% for activity in site. itineraries %}{% assign activitiesNatures = activitiesNatures | concat: activity. activityNatures  %}{% endfor %} {% for activityNature in activitiesNatures %}       &lt;h2 id= {{ activityNature | replace:    , -  }} &gt;{{ activityNature }}&lt;/h2&gt;     {% for activity in site. itineraries %} {% if activity. activityNatures contains activityNature  %} {% include activitybox. html %} {% endif %} {% endfor %}   {% endfor %} "
+    "body": "      سهل و في متناول الجميع:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل و في متناول الجميع'  %} {% include activitybox. html %} {% endif %} {% endfor %}         سهل:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل'  %} {% include activitybox. html %} {% endif %} {% endfor %}   "
     }, {
     "id": 6,
     "url": "/membres",

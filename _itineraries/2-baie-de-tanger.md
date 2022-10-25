@@ -3,9 +3,9 @@ layout : itinerary
 author: yassin_gorfti
 title : محطة القطار -- القاعة المغطاة الدرادب 
 date_sortie: 15/10/2022
-Distance : 15.77
+distance : 15.77
+difficulty :  سهل و في متناول الجميع  
 Dénivelé positif : 
-Difficulty : سهل  
 Dénivelé négatif :  
 Altitude maxi :  
 Trailrank : 
@@ -13,8 +13,7 @@ Altitude mini:
 Type d'itinéraire:
 wikiloc_id: 112568725
 embed_map: 
-activityNatures: [Randonnée]
-technologies: [facile]
+
 image : assets/images/itineraries/2/2-baie-de-tanger.jpg
 date : 25/10/2022
 ---

@@ -1,11 +1,12 @@
 ---
 layout : itinerary
-author: admin
+author: yassin_gorfti
 title : خرجة مشي الزياتن- الدرادب
 date_sortie: 15/10/2022
-Distance : 14,2
+distance : 14,2
+difficulty : سهل 
 Dénivelé positif : 332
-Difficulté technique: Modéré
+
 Dénivelé négatif : 362 
 Altitude maxi : 269 
 Trailrank : 8

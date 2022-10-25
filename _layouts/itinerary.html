@@ -44,25 +44,14 @@ layout: default
               {% endif %}
               <!-- End Toc -->
                <ul>
-                    <li>صعوبة :  {{page.Difficulty}}</li>
-                    <li>مسافه :  {{page.Distance}} km  </li>
+                    <li>صعوبة :  {{page.difficulty}}</li>
+                    <li>مسافه :  {{page.distance}} km  </li>
                </ul>
               {{content}}
           </div>
 
-          <!-- Post Categories -->
-          <div class="after-post-cats">
-              <ul class="tags mb-4">
-                  {% assign sortedCategories = page.activityNatures | sort %}
-                  {% for category in sortedCategories %}
-                  <li>
-                      <a class="smoothscroll" href="{{site.baseurl}}/activités#{{ category | replace: " ","-" }}">{{ category }}</a>
-                  </li>
-                  {% endfor %}
-              </ul>
-          </div>
-          <!-- End Categories -->
-
+         
+        
 
       </div>
       <!-- End Post -->
