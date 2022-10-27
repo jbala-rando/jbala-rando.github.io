@@ -5,7 +5,7 @@ firstname: ياسين
 lastname : گرفطي
 display_name: ياسين گرفطي
 avatar: assets/images/authors/yassin_gorfti.jpg
-email: essarraj.fouad@gmail.com
+email: 
 description: 
 site_web: 
 ---

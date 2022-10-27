@@ -28,7 +28,7 @@ var documents = [{
     "id": 5,
     "url": "/itineraires",
     "title": "Nos activités",
-    "body": "      سهل و في متناول الجميع:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل و في متناول الجميع'  %} {% include activitybox. html %} {% endif %} {% endfor %}         سهل:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل'  %} {% include activitybox. html %} {% endif %} {% endfor %}   "
+    "body": "      سهل:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         سهل إلى متوسط:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل إلى متوسط'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         متوسط :     {% for activity in site. itineraries %} {% if activity. difficulty == 'متوسط'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}          متوسط إلى صعب   :     {% for activity in site. itineraries %} {% if activity. difficulty == 'متوسط إلى صعب'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         صعب :     {% for activity in site. itineraries %} {% if activity. difficulty == 'صعب'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}   "
     }, {
     "id": 6,
     "url": "/membres",
