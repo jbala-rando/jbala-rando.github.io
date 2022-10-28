@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-2 pl-0">
+          {% include share.html %}
+      </div>
+
+      <!-- Post -->
+  
+      <div class="col-md-9 flex-first flex-md-unordered">
+          <div class="mainheading">
+            <h1 class="posttitle">{{ page.title }}</h1>
+          </div>
+
+          <!-- Post Featured Image -->
+          
+
+          <!-- Post Content -->
+          <div class="article-post">
+              <!-- Toc if any -->
+              {% if page.toc %}
+                  {% if page.beforetoc %}
+                      <p><em>{{page.beforetoc}}</em></p>
+                  {% endif %}
+                  <div class="toc mt-4 mb-4 lead">
+                      <h3 class="font-weight-bold">Summary</h3>
+                      {% include toc.html html=content %}
+                  </div>
+              {% endif %}
+              <!-- End Toc -->
+               <ul>
+                    <li>صعوبة :  {{page.difficulty}}</li>
+                    <li>مسافه :  {{page.distance}} km  </li>
+               </ul>
+              {{content}}
+          </div>
+
+         
+        
+
+      </div>
+      <!-- End Post -->
+
+  </div>
+</div>
+
+

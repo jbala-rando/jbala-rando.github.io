@@ -1,0 +1,35 @@
+<!-- begin activity -->
+<div class="col-lg-4 col-md-6 mb-30px card-group">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="{{ site.baseurl }}{{ activity.url }}">
+              
+                {% if activity.image %}
+
+                    {% if site.lazyimages == "enabled" %}
+                        <img class="img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if activity.image contains "://" %}{{ activity.image }}{% else %}{{ site.baseurl }}/{{ activity.image }}{% endif %}" alt="{{ activity.title }}">
+                    {% else %}
+                        <img class="img-fluid" src="{% if activity.image contains "://" %}{{ activity.image }}{% else %}{{ site.baseurl }}/{{ activity.image }}{% endif %}" alt="{{ activity.title }}"> 
+                    {% endif %}
+
+                {% endif %}
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="{{ site.baseurl }}{{ activity.url }}">{{ activity.title }}</a>
+                {% if activity.rating %}
+                <div class="mb-2 mt-2 font-weight-normal">
+                {% include star_rating.html %}
+                </div>
+                {% endif %}
+            </h2>
+            <h4 class="card-text">
+                {{circuit_randonnee.nom_arabe}}
+                
+            </h4>
+        </div>
+        
+    </div>
+</div>
+<!-- end activity -->

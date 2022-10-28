@@ -23,6 +23,12 @@ collections:
   itineraries:
     output: true
     permalink: /itinéraires/:title/
+  guide_culturels:
+    output: true
+    permalink: /guide-culturels/:title/
+  circuits_randonnees:
+    output: true
+    permalink: /lieux/:title/
   skills:
     output: true
     permalink: /compétences/:title/

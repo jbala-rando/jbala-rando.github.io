@@ -16,36 +16,41 @@ var documents = [{
     "body": ""
     }, {
     "id": 3,
+    "url": "/circuits-randonnées",
+    "title": "دوائر المشي لمسافات طويلة",
+    "body": "      دوائر المشي لمسافات طويلة:     {% for circuit_randonnee in site. circuits_randonnees %} {% include circuits_randonnees_box. html %} {% endfor %}   "
+    }, {
+    "id": 4,
     "url": "/",
     "title": "Accueil",
     "body": "{% if page. url == “/” %}       مقالات جديدة:       {% for post in site. posts %}    {% if post. featured == true %}      {% include featuredbox. html %}    {% endif %}  {% endfor %}  {% endif %}       مقالات:         {% for post in paginator. posts %}    {% include postbox. html %}    {% endfor %}    {% include pagination. html %}"
     }, {
-    "id": 4,
+    "id": 5,
     "url": "/inscription",
     "title": "Inscription",
     "body": "InscriptionEn cours de construction "
     }, {
-    "id": 5,
+    "id": 6,
     "url": "/itineraires",
     "title": "Nos activités",
     "body": "      سهل:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         سهل إلى متوسط:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل إلى متوسط'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         متوسط :     {% for activity in site. itineraries %} {% if activity. difficulty == 'متوسط'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}          متوسط إلى صعب   :     {% for activity in site. itineraries %} {% if activity. difficulty == 'متوسط إلى صعب'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         صعب :     {% for activity in site. itineraries %} {% if activity. difficulty == 'صعب'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}   "
     }, {
-    "id": 6,
+    "id": 7,
     "url": "/membres",
     "title": "Membres",
     "body": "Membres de clubNotre club a plus de 150 membres classé par trois niveaux Niveau Blanc: Un membre blanc est un membre débutant en programmation et qui n’a pas un portfolio numérique. Niveau Vert: Un membre vert est un membre qui a déjà un projet fonctionnelle sur son portfolio. Niveau Bleu: Un membre bleu est un membre qui a déjà un portfolio avec deux projet en minimum. "
     }, {
-    "id": 7,
+    "id": 8,
     "url": "/portfolio-technoligies",
     "title": "Mes réalisations",
     "body": "{% assign technologies = ‘’ | split: ‘’ %}{% for project in site. projects %}{% assign technologies = technologies | concat: project. technologies  %}{% endfor %} {% for technologie in technologies %}       &lt;h2 id= {{ technologie | replace:    , -  | replace:  .  , -  }} &gt;{{ technologie }}&lt;/h2&gt;     {% for project in site. projects %} {% if project. technologies contains technologie  %} {% include projectbox. html %} {% endif %} {% endfor %}   {% endfor %} "
     }, {
-    "id": 8,
+    "id": 9,
     "url": "/robots.txt",
     "title": "",
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
-    "id": 9,
+    "id": 10,
     "url": "/droit-interne-du-groupe-jbala-rando/",
     "title": "القانون الداخلي لمجموعة جبالة راندو",
     "body": "2022/10/23 - القانون الداخلي لمجموعة جبالة راندو: #JBALA_RANDO مجموعة لا تدعي التميز ولكن التميز يرتبط بإسمها، مجموعة شبابية يجمعها شغف المغامرة وحب السفر و الترحال.  ولكي تبقى المجموعة متميزة ودائمة الافادة يجب علينا الاتزام بالقوانين التنظيمية الداخلية لها:  أولا: المجموعة للجميع وليس لشخص معين.  ثانيا: إحترام الأعضاء واجب وضروري وأي شخص لا يحترم هذا القانون يحذف مباشرة.  ثالثا: مناقشة مواضيع لها علاقة بالترحال و التسلق الجبلي وأي رياضة لها علاقة بهذا المجال باحترام وتقبل الرأي الآخر بكل روح رياضية.  رابعا: نشر المنشور مع الوصف أو العنوان وأي موضوع مخالف للرياضة والسياحة الجبلية غير مسموح به داخل المجموعة.  خامسا: عدم نشر الاشهارات التجارية الخاصة بالصفحات وباقي المجموعات الأخرى.  سادسا: تجنب النقاشات الثنائية والدينية والسياسية والحزبية … سابعا: من لا يريد أن تنشر صوره 📷 مع المجموعة عليه الامتناع عن أخذ صور جماعية.  ثامنا: الالتزام ب مواعيد الرحلة وأي شخص ألغى مقعده في اليوم الذي يسبق اليوم المحدد للرحلة يجب عليه أن يدفع ثمن المشاركة. الهدف من إنشاء المجموعة . . الافادة والاستفادة . . مشاركة الأعضاء المسارات والرحلات . . مشاركة الاعضاء المعدات الخاصة بالترحال . . الإجابة على الاستفسارات المتعلقة بالرياضات الجبليةوالقيام بأعمال تطوعية لفائدة ساكنة القرى الجبلية الهشة. "
