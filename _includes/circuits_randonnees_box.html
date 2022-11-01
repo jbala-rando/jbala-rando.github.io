@@ -1,15 +1,15 @@
-<!-- begin activity -->
+<!-- begin circuit_randonnee -->
 <div class="col-lg-4 col-md-6 mb-30px card-group">
     <div class="card h-100">
         <div class="maxthumb">
-            <a href="{{ site.baseurl }}{{ activity.url }}">
+            <a href="{{ site.baseurl }}{{ circuit_randonnee.url }}">
               
-                {% if activity.image %}
+                {% if circuit_randonnee.image %}
 
                     {% if site.lazyimages == "enabled" %}
-                        <img class="img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if activity.image contains "://" %}{{ activity.image }}{% else %}{{ site.baseurl }}/{{ activity.image }}{% endif %}" alt="{{ activity.title }}">
+                        <img class="img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if circuit_randonnee.image contains "://" %}{{ circuit_randonnee.image }}{% else %}{{ site.baseurl }}/{{ circuit_randonnee.image }}{% endif %}" alt="{{ circuit_randonnee.title }}">
                     {% else %}
-                        <img class="img-fluid" src="{% if activity.image contains "://" %}{{ activity.image }}{% else %}{{ site.baseurl }}/{{ activity.image }}{% endif %}" alt="{{ activity.title }}"> 
+                        <img class="img-fluid" src="{% if circuit_randonnee.image contains "://" %}{{ circuit_randonnee.image }}{% else %}{{ site.baseurl }}/{{ circuit_randonnee.image }}{% endif %}" alt="{{ circuit_randonnee.title }}"> 
                     {% endif %}
 
                 {% endif %}
@@ -17,19 +17,17 @@
         </div>
         <div class="card-body">
             <h2 class="card-title">
-                <a class="text-dark" href="{{ site.baseurl }}{{ activity.url }}">{{ activity.title }}</a>
-                {% if activity.rating %}
+                <a class="text-dark" href="{{ site.baseurl }}{{ circuit_randonnee.url }}">{{ circuit_randonnee.nom_arabe }}</a>
+                {% if circuit_randonnee.rating %}
                 <div class="mb-2 mt-2 font-weight-normal">
                 {% include star_rating.html %}
                 </div>
                 {% endif %}
             </h2>
-            <h4 class="card-text">
-                {{circuit_randonnee.nom_arabe}}
-                
-            </h4>
+             
+            <h4 class="card-text">{{ circuit_randonnee.excerpt | strip_html | truncatewords:30 }}</h4>
         </div>
         
     </div>
 </div>
-<!-- end activity -->
+<!-- end circuit_randonnee -->

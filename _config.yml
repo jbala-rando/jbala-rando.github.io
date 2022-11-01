@@ -28,7 +28,7 @@ collections:
     permalink: /guide-culturels/:title/
   circuits_randonnees:
     output: true
-    permalink: /lieux/:title/
+    permalink: /circuits-randonnées/:title/
   skills:
     output: true
     permalink: /compétences/:title/
