@@ -33,7 +33,7 @@ var documents = [{
     "id": 6,
     "url": "/itineraires",
     "title": "Nos activités",
-    "body": "      سهل:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         سهل إلى متوسط:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل إلى متوسط'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         متوسط :     {% for activity in site. itineraries %} {% if activity. difficulty == 'متوسط'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}          متوسط إلى صعب   :     {% for activity in site. itineraries %} {% if activity. difficulty == 'متوسط إلى صعب'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         صعب :     {% for activity in site. itineraries %} {% if activity. difficulty == 'صعب'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}   "
+    "body": "{% for itinerarie in site. data. sorties %}{{itinerarie[“إسم الخرجة”]}}{{itinerarie[“مؤطر الخرجة”]}}{{itinerarie[“صعوبة المسار”]}}{{itinerarie[“موثق الخرجة”]}} {% endfor %}       سهل:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         سهل إلى متوسط:     {% for activity in site. itineraries %} {% if activity. difficulty == 'سهل إلى متوسط'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         متوسط :     {% for activity in site. itineraries %} {% if activity. difficulty == 'متوسط'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}          متوسط إلى صعب   :     {% for activity in site. itineraries %} {% if activity. difficulty == 'متوسط إلى صعب'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}         صعب :     {% for activity in site. itineraries %} {% if activity. difficulty == 'صعب'  %} {% include itinerarybox. html %} {% endif %} {% endfor %}   "
     }, {
     "id": 7,
     "url": "/membres",
@@ -46,11 +46,46 @@ var documents = [{
     "body": "{% assign technologies = ‘’ | split: ‘’ %}{% for project in site. projects %}{% assign technologies = technologies | concat: project. technologies  %}{% endfor %} {% for technologie in technologies %}       &lt;h2 id= {{ technologie | replace:    , -  | replace:  .  , -  }} &gt;{{ technologie }}&lt;/h2&gt;     {% for project in site. projects %} {% if project. technologies contains technologie  %} {% include projectbox. html %} {% endif %} {% endfor %}   {% endfor %} "
     }, {
     "id": 9,
+    "url": "/sorties/21102022-210305/",
+    "title": "21/10/2022 21:03:05",
+    "body": "                                         {{ page. Horodateur }}      {{ page[ مؤطر الخرجة ] }}            "
+    }, {
+    "id": 10,
+    "url": "/sorties/21102022-224151/",
+    "title": "21/10/2022 22:41:51",
+    "body": "                                         {{ page. Horodateur }}      {{ page[ مؤطر الخرجة ] }}            "
+    }, {
+    "id": 11,
+    "url": "/sorties/22102022-175445/",
+    "title": "22/10/2022 17:54:45",
+    "body": "                                         {{ page. Horodateur }}      {{ page[ مؤطر الخرجة ] }}            "
+    }, {
+    "id": 12,
+    "url": "/sorties/24102022-204225/",
+    "title": "24/10/2022 20:42:25",
+    "body": "                                         {{ page. Horodateur }}      {{ page[ مؤطر الخرجة ] }}            "
+    }, {
+    "id": 13,
+    "url": "/sorties/24102022-205954/",
+    "title": "24/10/2022 20:59:54",
+    "body": "                                         {{ page. Horodateur }}      {{ page[ مؤطر الخرجة ] }}            "
+    }, {
+    "id": 14,
+    "url": "/sorties/24102022-210845/",
+    "title": "24/10/2022 21:08:45",
+    "body": "                                         {{ page. Horodateur }}      {{ page[ مؤطر الخرجة ] }}            "
+    }, {
+    "id": 15,
+    "url": "/sorties/24102022-212924/",
+    "title": "24/10/2022 21:29:24",
+    "body": "                                         {{ page. Horodateur }}      {{ page[ مؤطر الخرجة ] }}            "
+    }, {
+    "id": 16,
     "url": "/robots.txt",
     "title": "",
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
-    "id": 10,
+    "id": 17,
     "url": "/droit-interne-du-groupe-jbala-rando/",
     "title": "القانون الداخلي لمجموعة جبالة راندو",
     "body": "2022/10/23 - القانون الداخلي لمجموعة جبالة راندو: #JBALA_RANDO مجموعة لا تدعي التميز ولكن التميز يرتبط بإسمها، مجموعة شبابية يجمعها شغف المغامرة وحب السفر و الترحال.  ولكي تبقى المجموعة متميزة ودائمة الافادة يجب علينا الاتزام بالقوانين التنظيمية الداخلية لها:  أولا: المجموعة للجميع وليس لشخص معين.  ثانيا: إحترام الأعضاء واجب وضروري وأي شخص لا يحترم هذا القانون يحذف مباشرة.  ثالثا: مناقشة مواضيع لها علاقة بالترحال و التسلق الجبلي وأي رياضة لها علاقة بهذا المجال باحترام وتقبل الرأي الآخر بكل روح رياضية.  رابعا: نشر المنشور مع الوصف أو العنوان وأي موضوع مخالف للرياضة والسياحة الجبلية غير مسموح به داخل المجموعة.  خامسا: عدم نشر الاشهارات التجارية الخاصة بالصفحات وباقي المجموعات الأخرى.  سادسا: تجنب النقاشات الثنائية والدينية والسياسية والحزبية … سابعا: من لا يريد أن تنشر صوره 📷 مع المجموعة عليه الامتناع عن أخذ صور جماعية.  ثامنا: الالتزام ب مواعيد الرحلة وأي شخص ألغى مقعده في اليوم الذي يسبق اليوم المحدد للرحلة يجب عليه أن يدفع ثمن المشاركة. الهدف من إنشاء المجموعة . . الافادة والاستفادة . . مشاركة الأعضاء المسارات والرحلات . . مشاركة الاعضاء المعدات الخاصة بالترحال . . الإجابة على الاستفسارات المتعلقة بالرياضات الجبليةوالقيام بأعمال تطوعية لفائدة ساكنة القرى الجبلية الهشة. "

@@ -5,6 +5,14 @@ permalink: /itineraires
 comments: false
 ---
 
+{% for itinerarie in site.data.sorties %}
+{{itinerarie["إسم الخرجة"]}}
+{{itinerarie["مؤطر الخرجة"]}}
+{{itinerarie["صعوبة المسار"]}}
+{{itinerarie["موثق الخرجة"]}}
+ 
+{% endfor %}
+
 
 
 <section class="recent-posts">

@@ -12,6 +12,15 @@ baseurl: ''
 include: ["_pages"]
 permalink: /:title/
 
+
+page_gen-dirs: true # uncomment, if you prefer to generate named folders
+page_gen:
+  - data: 'sorties'
+    template: 'sortie'
+    name:   'Horodateur'
+    dir: 'sorties'
+
+    
 # Collections
 collections:
   activityNatures:
@@ -102,3 +111,5 @@ exclude:
   - docs
   - build.ps1
   - start.ps1
+
+
